@@ -136,10 +136,15 @@ function depositarDinero() {
 
 function cambiarLimiteDeExtraccion() {
   var nuevoLimite = parseInt(prompt("Ingrese su nuevo límite de extraccion"), 0);
-  limiteExtraccion = nuevoLimite;
-  actualizarLimiteEnPantalla();
-  alert(
+  if (isNaN(nuevoLimite)) {
+    return alert("Ingrese numeros");
+  } else {   
+    limiteExtraccion = nuevoLimite;
+    actualizarLimiteEnPantalla();
+    alert(
     "Pum pum!! Se ha actualizado tu límite de extracción, nuevo valor " +
       limiteExtraccion
   );
+  }
+
 }
