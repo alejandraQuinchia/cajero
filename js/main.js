@@ -85,22 +85,6 @@ function depositarServicio(tipoDeServicio, nombreServicio) {
     `Has pagado ${tipoDeServicio} del servicio ${nombreServicio} y tu nuevo saldo es ${saldoEnCuenta}`
   );
 }
-rvicios[0]);
-      break;
-    case "2":
-      depositarServicio(telefono, misServicios[1]);
-      break;
-    case "3":
-      depositarServicio(luz, misServicios[2]);
-      break;
-    case "4":
-      depositarServicio(internet, misServicios[3]);
-      break;
-    default:
-      alert("No hay opción valida");
-      break;
-  }
-};
 
 function depositarServicio(tipoDeServicio, nombreServicio) {
   saldoEnCuenta -= tipoDeServicio;
@@ -111,7 +95,8 @@ function depositarServicio(tipoDeServicio, nombreServicio) {
 }
 //evento para pagar servicios
 //listener sobre el elemento,
-document.getElementById("servicios").addEventListener("click", pagarServicios);
+//document.getElementById("servicios").addEventListener("click", pagarServicios);
+document.getElementsByClassName("links").addEventListener("click", extraerDinero);
 function extraerDinero() {
   let dineroAExtraer = parseInt(prompt("Digite el Valor a extraer"), 0);
 
