@@ -106,9 +106,15 @@ function extraerDinero() {
   } else if (dineroAExtraer > limiteExtraccion) {
     alert("No puede exceder el limite de extraccion");
   } else if (dineroAExtraer < saldoEnCuenta) {
+    var resto = dineroAExtraer % 100;   
+    if ( resto == 0 ){
     saldoEnCuenta = saldoEnCuenta - dineroAExtraer;
     alert("su saldo se actualizo");
     actualizarSaldoEnPantalla();
+    }
+    else{
+      alert("El valor a extraer no es múltiplo de 100");
+    }  
   } else {
     alert("Error,Digite un valor correcto");
   }
