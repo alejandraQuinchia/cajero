@@ -95,7 +95,7 @@ function depositarServicio(tipoDeServicio, nombreServicio) {
 }
 //evento para pagar servicios
 //listener sobre el elemento,
-//document.getElementById("servicios").addEventListener("click", pagarServicios);
+document.getElementById("servicios").addEventListener("click", pagarServicios);
 document.getElementsByClassName("links").addEventListener("click", extraerDinero);
 function extraerDinero() {
   let dineroAExtraer = parseInt(prompt("Digite el Valor a extraer"), 0);
