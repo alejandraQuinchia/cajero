@@ -135,7 +135,7 @@ function depositarDinero() {
 }
 
 function cambiarLimiteDeExtraccion() {
-  var nuevoLimite = parseInt(prompt("Ingrese su nuevo límite de estrasion"), 0);
+  var nuevoLimite = parseInt(prompt("Ingrese su nuevo límite de extraccion"), 0);
   limiteExtraccion = nuevoLimite;
   actualizarLimiteEnPantalla();
   alert(
