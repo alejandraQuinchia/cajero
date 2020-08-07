@@ -1,6 +1,6 @@
 console.log("Hello my banking app");
 // DECLARACIÓN DE VARIABLES
-let nombreUsuario = "John Flórez";
+let nombreUsuario = "Alejandra Quinchia";
 let saldoEnCuenta = 5000;
 let limiteExtraccion = 500;
 let claveCorrecta = 1234;
@@ -27,7 +27,7 @@ function iniciarSesion() {
 }
 //Función para poder cargar el nombre en pantalla
 function cargarNombreEnPantalla() {
-  document.getElementById("nombre").innerHTML = "Hello hello " + nombreUsuario;
+  document.getElementById("nombre").innerHTML = "Hello " + nombreUsuario;
 }
 
 //actualizar saldo en pantalla
@@ -38,7 +38,7 @@ function actualizarSaldoEnPantalla() {
 //función flecha limite en pantalla fuction --- =>
 const actualizarLimiteEnPantalla = () => {
   document.getElementById("limite-extraccion").innerHTML =
-    "Tu límite de estraccion es: $ " + limiteExtraccion;
+    "Tu límite de extraccion es: $ " + limiteExtraccion;
 };
 
 //INVOCAR LA FUNCIÓN INICIAR SESIÓN
