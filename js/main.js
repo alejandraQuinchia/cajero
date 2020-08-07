@@ -138,7 +138,9 @@ function cambiarLimiteDeExtraccion() {
   var nuevoLimite = parseInt(prompt("Ingrese su nuevo límite de extraccion"), 0);
   if (isNaN(nuevoLimite)) {
     return alert("Ingrese numeros");
-  } else {   
+  } else if (nuevoLimite <= 0) {
+    return alert("Ingrese un valor mayor a cero");
+  }   
     limiteExtraccion = nuevoLimite;
     actualizarLimiteEnPantalla();
     alert(
@@ -146,5 +148,3 @@ function cambiarLimiteDeExtraccion() {
       limiteExtraccion
   );
   }
-
-}
